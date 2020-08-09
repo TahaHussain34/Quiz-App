@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="questionaire(0), sessionStorage.clear() , timer()">
+    <div class="container">
+        <div class="header">
+            <h3 id="timer">02:00</h3>
+
+        </div>
+        <div class="quiz-content">
+            <h2 id="question">Question No.1</h2>
+            <h4 class="options" onclick="activeClass(this)" onmouseover="this.style.backgroundColor='blue'; this.style.color = 'white';" 
+            onmouseout = "this.style.backgroundColor='white'; this.style.color = 'black';">option 1</h4>
+            <h4 class="options" onclick="activeClass(this)" onmouseover="this.style.backgroundColor='blue'; this.style.color = 'white';" 
+            onmouseout = "this.style.backgroundColor='white'; this.style.color = 'black';">option 2</h4>
+            <h4 class="options" onclick="activeClass(this)" onmouseover="this.style.backgroundColor='blue'; this.style.color = 'white';" 
+            onmouseout = "this.style.backgroundColor='white'; this.style.color = 'black';">option 3</h4>
+            <h4 class="options" onclick="activeClass(this)" onmouseover="this.style.backgroundColor='blue'; this.style.color = 'white';" 
+            onmouseout = "this.style.backgroundColor='white'; this.style.color = 'black';">option 4</h4>
+
+        </div>
+        <div class="footer">
+            <button type="submit" id="next" onclick="nextQuestion()">Submit</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
